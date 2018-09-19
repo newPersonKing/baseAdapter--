@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/list_back_color">
+
+    <include layout="@layout/layout_top"/>
+    <include layout="@layout/include_title_layout"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20">
+
+        <RadioButton
+            android:id="@+id/rt_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简体中文"
+            android:button="@null"
+            android:textSize="20sp"
+            android:textColor="@color/language_text_color"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rt_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="繁軆中文"
+            android:button="@null"
+            android:textSize="20sp"
+            android:textColor="@color/language_text_color"
+            android:layout_marginTop="@dimen/dp_20"/>
+
+        <RadioButton
+            android:id="@+id/rt_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:button="@null"
+            android:textSize="20sp"
+            android:textColor="@color/language_text_color"
+            android:layout_marginTop="@dimen/dp_20"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aj3_a"
+        android:text="确定"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textColor="@color/top_yxs_color"/>
+
+</LinearLayout>

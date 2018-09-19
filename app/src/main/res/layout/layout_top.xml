@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_linear"
+    android:layout_width="240dp"
+    android:layout_height="20dp"
+    android:background="@color/top_back_color">
+
+    <TextView
+        android:id="@+id/top_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginRight="2dp"
+        android:text="12:30"
+        android:textColor="@color/top_yxs_color"/>
+
+
+    <TextView
+        android:id="@+id/top_yys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="6sp"
+        android:layout_marginLeft="2dp"
+        android:text="4g"
+        android:textColor="@color/top_yxs_color"
+        android:layout_toRightOf="@id/top_time"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/top_sim_type"
+        android:layout_width="26dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/top_time"
+        android:textColor="@color/top_yxs_color"
+        android:textSize="6sp"
+        android:layout_marginLeft="1dp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/top_time">
+
+        <ImageView
+            android:id="@+id/top_sim_wifi"
+            android:layout_width="26dp"
+            android:layout_height="20dp"
+            android:src="@drawable/top_xh4"/>
+
+        <ImageView
+            android:id="@+id/top_soft_wifi"
+            android:layout_width="26dp"
+            android:layout_height="20dp"
+            android:src="@drawable/top_xh4"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/top_blue_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top_blue"
+        android:layout_toLeftOf="@+id/top_wifi_hot"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/top_wifi_hot"
+        android:layout_width="26dp"
+        android:layout_height="20dp"
+        android:src="@drawable/top_rd"
+        android:layout_toLeftOf="@+id/top_wifi"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/top_wifi"
+        android:layout_width="26dp"
+        android:layout_height="20dp"
+        android:src="@drawable/top_wifi1"
+        android:layout_toLeftOf="@+id/top_dc1"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/top_dc1"
+        android:layout_width="28dp"
+        android:layout_height="14dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/top_dc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/top_dc1"/>
+
+        <ImageView
+            android:id="@+id/top_dc_cd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/top_dc_cd"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

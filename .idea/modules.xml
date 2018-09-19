@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HttpRequest/HttpRequest.iml" filepath="$PROJECT_DIR$/HttpRequest/HttpRequest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgressLayout/ProgressLayout.iml" filepath="$PROJECT_DIR$/ProgressLayout/ProgressLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-adapter-library/base-adapter-library.iml" filepath="$PROJECT_DIR$/base-adapter-library/base-adapter-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baseadapter-recyclerview/baseadapter-recyclerview.iml" filepath="$PROJECT_DIR$/baseadapter-recyclerview/baseadapter-recyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bubbleseekbar/bubbleseekbar.iml" filepath="$PROJECT_DIR$/bubbleseekbar/bubbleseekbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ocr/ocr.iml" filepath="$PROJECT_DIR$/ocr/ocr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/permission/permission.iml" filepath="$PROJECT_DIR$/permission/permission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/switchbutton/switchbutton.iml" filepath="$PROJECT_DIR$/switchbutton/switchbutton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/translation_pen.iml" filepath="$PROJECT_DIR$/translation_pen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/widget/widget.iml" filepath="$PROJECT_DIR$/widget/widget.iml" />
+    </modules>
+  </component>
+</project>

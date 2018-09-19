@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="78dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/go_to_country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_10">
+        <ImageView
+            android:id="@+id/country_pic"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@drawable/cny" />
+
+        <TextView
+            android:id="@+id/country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_18sp"
+            android:textColor="@color/top_yxs_color"
+            android:text="CNY"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:src="@drawable/down_jt"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/dp_2"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/go_to_money"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right">
+        <TextView
+            android:id="@+id/rote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/top_yxs_color"
+            android:text="14.285"/>
+
+        <TextView
+            android:id="@+id/unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/money_unit_color"
+            android:text="人民币￥"
+            android:layout_marginTop="@dimen/dp_2"/>
+    </LinearLayout>
+
+
+</LinearLayout>

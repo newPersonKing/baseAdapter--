@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top"/>
+    <include layout="@layout/include_title_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/list_back_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_state_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="状态消息"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/top_yxs_color"/>
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已连接"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/top_yxs_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_streng_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="信号强度"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/top_yxs_color"/>
+
+            <TextView
+                android:id="@+id/tv_wifi_streng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="较强"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/top_yxs_color"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_entry_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="加密类型"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/top_yxs_color"/>
+
+            <TextView
+                android:id="@+id/tv_wifi_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wep"
+                android:textSize="@dimen/text_size_16sp"
+                android:textColor="@color/top_yxs_color"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wlan_aj2_a"
+                android:text="取消"
+                android:textSize="@dimen/text_size_18sp"
+                android:textColor="@color/top_yxs_color"/>
+
+            <Button
+                android:id="@+id/btn_break"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wlan_aj1_a"
+                android:text="断开"
+                android:textSize="@dimen/text_size_18sp"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:textColor="@color/top_yxs_color"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

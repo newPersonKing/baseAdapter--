@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/list_back_color">
+
+    <include layout="@layout/layout_top"/>
+    <include layout="@layout/include_title_layout"/>
+
+    <TextView
+        android:id="@+id/tv_recovery_result_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已恢复出厂设置"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="@color/top_yxs_color"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="重启设备"
+        android:background="@drawable/aj3_a"
+        android:textSize="16sp"
+        android:textColor="@color/top_yxs_color"
+        android:layout_marginBottom="@dimen/dp_10"/>
+
+</LinearLayout>

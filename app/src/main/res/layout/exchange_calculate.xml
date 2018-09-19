@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/keybord_shuzi"/>
+
+        <FrameLayout
+            android:layout_width="240dp"
+            android:layout_height="270dp"
+            android:layout_gravity="bottom">
+            <ImageView
+                android:id="@+id/img_alpha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/small_text_color"
+                android:alpha="0.6"
+                android:visibility="gone" />
+
+            <include layout="@layout/keybord_jisuan" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

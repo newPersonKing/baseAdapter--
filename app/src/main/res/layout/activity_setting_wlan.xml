@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top"/>
+    <include layout="@layout/include_title_layout"/>
+
+    <TextView
+        android:id="@+id/tv_turn_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/setting_title_back"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="开关"
+        android:textColor="@color/top_yxs_color"
+        android:textSize="@dimen/text_size_16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/top_yxs_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_wlan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WLAN"
+            android:textSize="20sp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:textColor="@color/big_text_color"/>
+
+        <com.fanwe.lib.switchbutton.FSwitchButton
+            android:id="@+id/sb_rect"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            app:sbImageChecked="@drawable/sz_kgy"
+            app:sbImageNormal="@drawable/sz_kgn"
+            app:sbIsChecked="true"
+            android:layout_marginRight="@dimen/dp_10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/setting_title_back">
+        <TextView
+            android:id="@+id/tv_wlan_list_name"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="可用WLAN列表"
+            android:textColor="@color/top_yxs_color"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <ImageView
+            android:id="@+id/iv_wlan_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wlan_sx"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rl_wlan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/setting_title_back"/>
+
+
+</LinearLayout>

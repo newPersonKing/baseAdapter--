@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.system.translationpen">
+    <!--android:sharedUserId="android.uid.system">-->
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SET_TIME" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:name="com.system.translationpen.entry.PenApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".entry.ActivityMain"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.system.translationpen.settings.ActivitySettings"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".hotspot.activity.ConnetListActivity"/>
+        <activity android:name=".hotspot.activity.MakeWifiHotActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name=".hotspot.activity.MakeWifiHotNameActivity"/>
+        <activity android:name=".hotspot.activity.MakeWifiHotPasswordActivity"/>
+        <activity android:name=".exchangerate.activity.ExChangeSelectActivity"/>
+        <activity android:name=".exchangerate.activity.AllCountryActivity"/>
+        <activity android:name=".exchangerate.activity.CalculateActivity"/>
+        <activity android:name=".settings.wlan.SettingWlanActivity"/>
+        <activity android:name=".settings.wlan.ConnectWlanActivity"/>
+        <activity android:name=".settings.wlan.WlanPassWordActivity"/>
+        <activity android:name=".settings.wlan.WifiBreakActivity"/>
+        <activity android:name=".settings.blue.SettingBlueActivity"/>
+        <activity android:name=".settings.light.LightMainActivity"/>
+        <activity android:name=".settings.voice.VoiceMainActivity"/>
+        <activity android:name=".settings.time.TimeMainActivity"/>
+        <activity android:name=".settings.time.TimeMakeDateActivity"/>
+        <activity android:name=".settings.time.TimeMakeTimeActivity"/>
+        <activity android:name=".settings.time.DoubleTimeActivity"/>
+        <activity android:name=".settings.time.FixedRegionActivity"/>
+        <activity android:name=".settings.language.LanguageMainActivity"/>
+        <activity android:name=".settings.update.CheckResultActivity"/>
+        <activity android:name=".settings.update.CheckNoResultActivity"/>
+        <activity android:name=".settings.recovery.RecoveryMainActivity"/>
+        <activity android:name=".settings.recovery.RecoveryResultActivity"/>
+        <activity android:name=".settings.equipment.EquipmentMainActivity"/>
+        <activity android:name=".settings.equipment.EquipmentOcrActivity"/>
+        <activity android:name=".settings.update.UpdateMainActivity"/>
+        <activity android:name="com.gy.permission.PermissionUtils$PermissionActivity"/>
+        <activity android:name=".settings.blue.EnterBlueNameActivity"/>
+        <activity android:name=".settings.blue.EditBlueNameActivity"/>
+        <activity android:name=".settings.wlan.RememberPassActivity"/>
+        <activity android:name=".settings.SettingMainActivity"/>
+        <activity android:name=".exchangerate.activity.ExchangeActivity"/>
+        <activity android:name=".hotspot.MainHotActivity"/>
+    </application>
+
+</manifest>

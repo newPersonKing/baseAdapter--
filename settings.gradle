@@ -1,0 +1,1 @@
+include ':app','HttpRequest','widget','switchbutton','ocr','bubbleseekbar','permission','ProgressLayout', ':base-adapter-library', ':baseadapter-recyclerview'

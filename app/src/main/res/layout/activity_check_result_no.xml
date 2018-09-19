@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/list_back_color">
+
+    <include layout="@layout/layout_top"/>
+    <include layout="@layout/include_title_layout"/>
+
+
+    <TextView
+        android:id="@+id/tv_version_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前版本XXXXXXX已是最新版本"
+        android:textSize="@dimen/text_size_18sp"
+        android:textColor="@color/top_yxs_color"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/aj3_a"
+        android:text="返回"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_30"/>
+
+</LinearLayout>
